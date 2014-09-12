@@ -1,0 +1,8 @@
+#content {
+	width: 220px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 4px #ccc;
+	padding: 5px;
+}

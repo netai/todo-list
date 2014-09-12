@@ -1,0 +1,12 @@
+<%- include layout/header.ejs %>
+<div class="mid">
+<div><b><%=data.fname%></b>&nbsp;|&nbsp;<a href="/logout">Logout</a></div>
+<h1>Edit Todo List</h1>
+<form action="/save-todo" method="post">
+<label>Job</label>
+<textarea name="job" required><%=todo[0]['job']%></textarea>
+<input type="hidden" value="<%=todo[0]['id']%>" name="id">
+<input type="submit" value="Add">
+</form>
+</div>
+<%- include layout/footer.ejs %>

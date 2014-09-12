@@ -1,0 +1,12 @@
+module.exports=function(app,controllers){
+		app.get('/',controllers.index.home);
+		app.post('/signup',controllers.account.signup);
+		app.post('/ajax/checkEmail',controllers.ajax.checkEmail);
+		app.post('/login',controllers.account.login);
+		app.get('/logout',controllers.account.logout);
+		app.get('/add-todo',controllers.todo.add_todo);
+		app.post('/save-todo',controllers.todo.save_todo);
+		app.get('/edit-todo/:id',controllers.todo.edit_todo);
+		app.get('/delete-todo/:id',controllers.todo.delete_todo);
+		app.get('/export-excel',controllers.other.export_excel);
+	}
